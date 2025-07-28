@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Shield, Award, Sparkles } from "lucide-react";
-import heroImage from "@/assets/collagel-hero.jpg";
+import heroImage from "@/assets/Collagel_new2.png";
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
@@ -12,8 +12,8 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-hero-gradient opacity-5"></div>
-      
-      <div className="container grid lg:grid-cols-2 gap-12 items-center py-20">
+
+      <div className="container grid lg:grid-cols-2 gap-10 items-center py-10">
         {/* Left Content */}
         <div className="space-y-8 text-center lg:text-left">
           <div className="space-y-4">
@@ -31,40 +31,40 @@ const Hero = () => {
                 Premium Quality
               </Badge>
             </div>
-            
+
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               <span className="bg-hero-gradient bg-clip-text text-transparent">
                 Collagel
               </span>
               <br />
-              <span className="text-foreground">
+              <span className="text-3xl text-foreground">
                 Minuman Jeli Sehat & Halal
               </span>
             </h1>
-            
+
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
-              Minuman kolagen (Hydrolyzed Halal Fish Collagen) yang telah tersertifikasi BPOM dan Halal MUI, 
-              aman dikonsumsi harian untuk kesehatan kulit, persendian, rambut dan kecantikan dari dalam. 
-              Terutama efektif untuk recovery paska operasi.
+              Minuman kolagen (<span className="italic">Hydrolyzed Halal Fish Collagen</span>) yang telah tersertifikasi BPOM dan Halal MUI,
+              aman dikonsumsi harian untuk <span className="font-bold text-primary">kesehatan kulit, persendian, rambut dan kecantikan dari dalam</span>.
+              Terutama efektif untuk pemulihan paska operasi.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               onClick={handleWhatsAppClick}
               className="bg-hero-gradient hover:shadow-glow transition-all duration-300 text-lg px-8 py-6"
             >
               Pesan Sekarang - Gratis Konsultasi
             </Button>
-            <Button 
-              variant="outline" 
+            {/* <Button
+              variant="outline"
               size="lg"
               onClick={handleWhatsAppClick}
               className="text-lg px-8 py-6 border-primary/30 hover:border-primary hover:bg-primary/5"
             >
               Chat WhatsApp
-            </Button>
+            </Button> */}
           </div>
 
           <div className="flex items-center justify-center lg:justify-start space-x-8 text-sm text-muted-foreground">
@@ -77,32 +77,32 @@ const Hero = () => {
               <div className="font-bold text-2xl text-primary">100%</div>
               <div>Halal & Aman</div>
             </div>
-            <div className="w-px h-12 bg-border"></div>
+            {/* <div className="w-px h-12 bg-border"></div>
             <div className="text-center">
               <div className="font-bold text-2xl text-primary">30 Hari</div>
               <div>Garansi Hasil</div>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Right Content - Product Image */}
         <div className="relative">
           <div className="relative rounded-3xl overflow-hidden shadow-glow">
-            <img 
-              src={heroImage} 
-              alt="Collagel - Minuman Jeli Sehat dan Halal" 
+            <img
+              src={heroImage}
+              alt="Collagel - Minuman Jeli Sehat dan Halal"
               className="w-full h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
           </div>
-          
+
           {/* Floating Elements */}
-          <div className="absolute -top-4 -right-4 bg-accent rounded-full p-4 shadow-soft animate-pulse">
+          {/* <div className="absolute -top-4 -right-4 bg-accent rounded-full p-4 shadow-soft animate-pulse">
             <Sparkles className="h-6 w-6 text-accent-foreground" />
           </div>
           <div className="absolute -bottom-4 -left-4 bg-primary rounded-full p-4 shadow-soft">
             <Shield className="h-6 w-6 text-primary-foreground" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import CollagelLogo from "@/assets/Collagel_logo.png";
 import { MessageCircle, Phone, Mail, MapPin, Shield, Award } from "lucide-react";
 
 const Footer = () => {
@@ -11,20 +12,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer id="tentang" className="bg-primary text-primary-foreground">
       <div className="container py-16">
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2 space-y-6">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="h-10 w-10 rounded-full bg-accent flex items-center justify-center">
-                  <span className="text-accent-foreground font-bold">C</span>
-                </div>
-                <span className="font-bold text-2xl">Collagel</span>
-              </div>
+              <img src={CollagelLogo} alt="Collagel Logo" className="h-10" />
               <p className="text-primary-foreground/80 leading-relaxed max-w-md">
-                Distributor resmi Collagel - minuman kolagen halal berkualitas tinggi 
+                Distributor resmi Collagel - minuman kolagen halal berkualitas tinggi
                 yang tersertifikasi BPOM & Halal MUI untuk kesehatan dan kecantikan optimal.
               </p>
             </div>
@@ -32,7 +28,7 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="font-semibold text-lg">Hubungi Kami Sekarang</h4>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button 
+                <Button
                   onClick={handleWhatsAppClick}
                   variant="secondary"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground"
@@ -40,20 +36,20 @@ const Footer = () => {
                   <MessageCircle className="h-4 w-4 mr-2" />
                   WhatsApp
                 </Button>
-                <Button 
+                {/* <Button 
                   onClick={handleCallClick}
                   variant="outline"
                   className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
                 >
                   <Phone className="h-4 w-4 mr-2" />
                   Telepon
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <h4 className="font-semibold text-lg">Navigasi</h4>
             <nav className="space-y-3">
               <a href="#produk" className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors">
@@ -69,7 +65,7 @@ const Footer = () => {
                 Tentang Kami
               </a>
             </nav>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div className="space-y-6">
@@ -114,7 +110,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-primary-foreground/60 text-sm">
-              © 2024 Collagel. Semua hak dilindungi.
+              © 2025 Collagel Distributor Jakarta. Semua hak dilindungi.
             </div>
           </div>
         </div>
@@ -122,9 +118,9 @@ const Footer = () => {
         {/* Disclaimer */}
         <div className="mt-8 pt-6 border-t border-primary-foreground/20">
           <p className="text-primary-foreground/60 text-xs leading-relaxed">
-            <strong>Disclaimer:</strong> Hasil dapat bervariasi untuk setiap individu. 
-            Produk ini bukan pengganti obat dan tidak dimaksudkan untuk mendiagnosis, 
-            mengobati, menyembuhkan, atau mencegah penyakit apapun. Konsultasikan dengan 
+            <strong>Disclaimer:</strong> Hasil dapat bervariasi untuk setiap individu.
+            Produk ini bukan pengganti obat dan tidak dimaksudkan untuk mendiagnosis,
+            mengobati, menyembuhkan, atau mencegah penyakit apapun. Konsultasikan dengan
             dokter sebelum menggunakan jika Anda memiliki kondisi medis khusus.
           </p>
         </div>

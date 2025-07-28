@@ -17,7 +17,7 @@ const FAQ = () => {
     },
     {
       question: "Bagaimana cara konsumsi yang benar?",
-      answer: "Konsumsi 1 sachet per hari, larutkan dalam 150ml air dingin atau suhu ruang. Sebaiknya diminum pada pagi hari sebelum makan atau malam hari sebelum tidur untuk penyerapan optimal."
+      answer: "Konsumsi 2 kali perhari, 2 sendok makan, bisa dikonsumsi langsung atau diencerkan dalam 100ml air dingin. Sebaiknya diminum pada pagi hari sebelum makan dan malam hari sebelum tidur untuk penyerapan optimal."
     },
     {
       question: "Apakah ada efek samping?",
@@ -33,11 +33,19 @@ const FAQ = () => {
     },
     {
       question: "Bagaimana cara penyimpanan yang benar?",
-      answer: "Simpan di tempat sejuk, kering, terhindar dari sinar matahari langsung. Setelah dibuka, sebaiknya dikonsumsi dalam 24 jam untuk menjaga kualitas dan kesegaran produk."
+      answer: "Simpan di tempat dingin, kering, terhindar dari sinar matahari langsung. Setelah dibuka, sebaiknya dikonsumsi dalam 24 jam untuk menjaga kualitas dan kesegaran produk."
     },
     {
-      question: "Apakah ada garansi jika tidak cocok?",
-      answer: "Ya, kami memberikan garansi uang kembali 100% jika Anda tidak puas dalam 30 hari pertama pembelian (dengan syarat dan ketentuan yang berlaku)."
+      question: "Bagaimana cara memesan produk?",
+      answer: "Pemesanan sangat mudah! Anda bisa langsung mengklik tombol 'Pesan Sekarang' di halaman ini dan mengikuti langkah-langkahnya, atau menghubungi kami langsung melalui WhatsApp untuk pemesanan manual."
+    },
+    {
+      question: "Apa saja metode pembayaran yang diterima?",
+      answer: "Kami menerima berbagai metode pembayaran, termasuk transfer bank (BCA, Mandiri, BRI), dompet digital (GoPay, OVO, Dana), dan pembayaran melalui minimarket (Alfamart, Indomaret)."
+    },
+    {
+      question: "Berapa lama proses pengiriman?",
+      answer: "Untuk wilayah Jabodetabek, pengiriman biasanya memakan waktu 1-2 hari kerja. Untuk kota-kota besar lainnya, estimasi 2-4 hari kerja. Anda akan menerima nomor resi untuk melacak pesanan Anda."
     }
   ];
 
@@ -60,8 +68,8 @@ const FAQ = () => {
         <div className="space-y-4">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="border border-primary/20 rounded-lg px-6 bg-card/50 backdrop-blur-sm hover:shadow-soft transition-all duration-300"
               >
@@ -83,7 +91,7 @@ const FAQ = () => {
               <p className="text-muted-foreground max-w-md">
                 Tim customer service kami siap membantu Anda 24/7 melalui WhatsApp
               </p>
-              <Button 
+              <Button
                 onClick={handleWhatsAppClick}
                 className="bg-hero-gradient hover:shadow-glow transition-all duration-300"
               >

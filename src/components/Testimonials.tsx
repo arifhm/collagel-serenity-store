@@ -13,7 +13,7 @@ const Testimonials = () => {
     },
     {
       name: "Ahmad Rizki",
-      age: "42 tahun", 
+      age: "42 tahun",
       location: "Bandung",
       rating: 5,
       text: "Sebagai atlet yang sering cedera lutut, produk ini membantu banget untuk recovery. Nyeri sendi berkurang drastis setelah 3 minggu konsumsi. Alhamdulillah halal juga.",
@@ -22,7 +22,7 @@ const Testimonials = () => {
     {
       name: "Fatimah Zahra",
       age: "28 tahun",
-      location: "Surabaya", 
+      location: "Surabaya",
       rating: 5,
       text: "Rambut rontok saya berkurang signifikan! Dulu rontok hingga 100 helai per hari, sekarang cuma 20-30 helai. Kuku juga jadi lebih kuat dan cepat panjang.",
       results: "Rambut rontok turun 70%"
@@ -37,7 +37,7 @@ const Testimonials = () => {
     },
     {
       name: "Ibu Aminah",
-      age: "58 tahun", 
+      age: "58 tahun",
       location: "Yogyakarta",
       rating: 5,
       text: "Di usia saya, kolagen sangat penting. Alhamdulillah ada produk halal seperti ini. Kulit tidak sekendor dulu, sendi lutut juga lebih enak untuk jalan.",
@@ -71,7 +71,7 @@ const Testimonials = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card 
+            <Card
               key={index}
               className="group hover:shadow-glow transition-all duration-300 border-primary/10 hover:border-primary/30 bg-card/50 backdrop-blur-sm"
             >
@@ -109,10 +109,10 @@ const Testimonials = () => {
         </div>
 
         {/* Trust Section */}
-        <div className="mt-16 text-center">
+        <div className="max-w-4xl mx-auto mt-16 text-center">
           <div className="inline-block p-8 bg-glass backdrop-blur-glass rounded-2xl border border-primary/20 shadow-soft">
             <div className="space-y-4">
-              <div className="flex items-center justify-center space-x-4">
+              <div className="flex items-center justify-center space-x-4 gap-10">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">4.9/5</div>
                   <div className="text-sm text-muted-foreground">Rating Pelanggan</div>
@@ -124,8 +124,8 @@ const Testimonials = () => {
                 </div>
                 <div className="w-px h-12 bg-border"></div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">95%</div>
-                  <div className="text-sm text-muted-foreground">Repeat Order</div>
+                  <div className="text-3xl font-bold text-primary">+50</div>
+                  <div className="text-sm text-muted-foreground">Reseller & Mitra</div>
                 </div>
               </div>
             </div>

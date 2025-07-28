@@ -26,13 +26,13 @@ const CTA = () => {
               <span className="text-accent">Transformasi Dimulai Hari Ini</span>
             </h2>
             <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-              Dapatkan kulit sehat, sendi kuat, dan rambut indah dengan 
+              Dapatkan kulit sehat, sendi kuat, dan rambut indah dengan
               Collagel - minuman jeli kolagen halal terbaik. Promo terbatas!
             </p>
           </div>
 
           {/* Urgency Elements */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <Clock className="h-8 w-8 text-accent mx-auto mb-3" />
               <h3 className="font-bold text-lg mb-2">Promo Terbatas</h3>
@@ -47,13 +47,13 @@ const CTA = () => {
                 Gratis konsultasi + panduan hidup sehat
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            {/* <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <Shield className="h-8 w-8 text-accent mx-auto mb-3" />
               <h3 className="font-bold text-lg mb-2">Garansi Uang Kembali</h3>
               <p className="text-sm text-primary-foreground/80">
                 100% uang kembali jika tidak puas
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Price Highlight */}
@@ -68,7 +68,7 @@ const CTA = () => {
 
           {/* CTA Buttons */}
           <div className="space-y-4">
-            <Button 
+            <Button
               size="lg"
               onClick={handleWhatsAppClick}
               className="bg-accent hover:bg-accent/90 text-accent-foreground text-xl px-12 py-6 rounded-2xl shadow-glow hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
