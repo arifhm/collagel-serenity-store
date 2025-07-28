@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const FAQ = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/6285880473634?text=Halo,%20saya%20memiliki%20pertanyaan%20tentang%20produk%20Hydrolyzed%20Halal%20Fish%20Collagen", "_blank");
+    window.open("https://wa.me/6285880473634?text=Halo,%20saya%20memiliki%20pertanyaan%20tentang%20produk%20Collagel", "_blank");
   };
 
   const faqs = [

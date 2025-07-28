@@ -3,7 +3,7 @@ import { Phone, MessageCircle } from "lucide-react";
 
 const Header = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/6285880473634?text=Halo,%20saya%20tertarik%20dengan%20produk%20Hydrolyzed%20Halal%20Fish%20Collagen", "_blank");
+    window.open("https://wa.me/6285880473634?text=Halo,%20saya%20tertarik%20dengan%20produk%20Collagel", "_blank");
   };
 
   return (
@@ -13,7 +13,7 @@ const Header = () => {
           <div className="h-8 w-8 rounded-full bg-hero-gradient flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-sm">C</span>
           </div>
-          <span className="font-bold text-xl text-primary">CollagenPlus</span>
+          <span className="font-bold text-xl text-primary">Collagel</span>
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">

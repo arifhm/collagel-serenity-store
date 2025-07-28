@@ -5,53 +5,53 @@ import { Check, Star, Shield, Award } from "lucide-react";
 
 const Product = () => {
   const handleWhatsAppClick = (packageType: string) => {
-    const message = `Halo, saya tertarik dengan paket ${packageType} Hydrolyzed Halal Fish Collagen. Bisa tolong berikan informasi lebih lanjut dan harga terbaiknya?`;
+    const message = `Halo, saya tertarik dengan ${packageType} Collagel. Bisa tolong berikan informasi lebih lanjut dan harga terbaiknya?`;
     window.open(`https://wa.me/6285880473634?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   const packages = [
     {
-      name: "Paket Pemula",
+      name: "Paket Hemat",
       duration: "1 Bulan",
-      originalPrice: "Rp 399.000",
-      price: "Rp 299.000",
-      savings: "Hemat Rp 100.000",
+      originalPrice: "Rp 250.000",
+      price: "Rp 199.000",
+      savings: "Hemat Rp 51.000",
       features: [
-        "1 Botol Collagen Premium (30 sachet)",
+        "1 Box Collagel (30 sachet)",
         "Panduan Konsumsi Lengkap",
         "Konsultasi WhatsApp Gratis",
-        "Garansi Uang Kembali"
+        "Gratis Ongkir Jabodetabek"
       ],
       popular: false
     },
     {
-      name: "Paket Optimal",
-      duration: "3 Bulan",
-      originalPrice: "Rp 1.197.000",
-      price: "Rp 799.000",
-      savings: "Hemat Rp 398.000",
+      name: "Paket Populer",
+      duration: "2 Bulan",
+      originalPrice: "Rp 500.000",
+      price: "Rp 350.000",
+      savings: "Hemat Rp 150.000",
       features: [
-        "3 Botol Collagen Premium (90 sachet)",
-        "BONUS: E-book Panduan Hidup Sehat",
+        "2 Box Collagel (60 sachet)",
+        "BONUS: Panduan Diet Sehat",
         "Konsultasi Pribadi dengan Ahli",
-        "Tracking Progress Mingguan",
-        "Garansi Hasil atau Uang Kembali"
+        "Gratis Ongkir Seluruh Indonesia",
+        "Garansi Uang Kembali"
       ],
       popular: true
     },
     {
-      name: "Paket Transformasi",
-      duration: "6 Bulan",
-      originalPrice: "Rp 2.394.000",
-      price: "Rp 1.399.000",
-      savings: "Hemat Rp 995.000",
+      name: "Paket Best Value",
+      duration: "3 Bulan",
+      originalPrice: "Rp 750.000",
+      price: "Rp 480.000",
+      savings: "Hemat Rp 270.000",
       features: [
-        "6 Botol Collagen Premium (180 sachet)",
-        "BONUS: Vitamin C + Zinc Supplement",
-        "Program Diet & Olahraga Personal",
+        "3 Box Collagel (90 sachet)",
+        "BONUS: Vitamin C Supplement",
+        "Program Konsultasi Rutin",
         "Konsultasi Video Call Bulanan",
-        "Certificate of Transformation",
-        "Garansi Seumur Hidup untuk Produk"
+        "Gratis Ongkir + Asuransi",
+        "Garansi Hasil Maksimal"
       ],
       popular: false
     }

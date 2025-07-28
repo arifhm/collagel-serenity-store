@@ -65,8 +65,7 @@ const Testimonials = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ribuan pelanggan telah merasakan transformasi nyata dengan 
-            Hydrolyzed Halal Fish Collagen kami
+            Ribuan pelanggan telah merasakan transformasi nyata dengan Collagel
           </p>
         </div>
 

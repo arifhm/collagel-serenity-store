@@ -48,7 +48,7 @@ const Benefits = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Rasakan transformasi nyata dalam kesehatan dan kecantikan Anda dengan 
-            Hydrolyzed Halal Fish Collagen berkualitas premium
+            Collagel - minuman jeli kolagen halal berkualitas premium
           </p>
         </div>
 

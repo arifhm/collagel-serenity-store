@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Shield, Award, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-collagen.jpg";
+import heroImage from "@/assets/collagel-hero.jpg";
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/6285880473634?text=Halo,%20saya%20tertarik%20dengan%20produk%20Hydrolyzed%20Halal%20Fish%20Collagen%20dan%20ingin%20tahu%20lebih%20lanjut", "_blank");
+    window.open("https://wa.me/6285880473634?text=Halo,%20saya%20tertarik%20dengan%20produk%20Collagel%20dan%20ingin%20tahu%20lebih%20lanjut", "_blank");
   };
 
   return (
@@ -34,18 +34,18 @@ const Hero = () => {
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               <span className="bg-hero-gradient bg-clip-text text-transparent">
-                Wujudkan Kulit Sehat
+                Collagel
               </span>
               <br />
               <span className="text-foreground">
-                dengan Kolagen Halal
+                Minuman Jeli Sehat & Halal
               </span>
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
-              Hydrolyzed Halal Fish Collagen premium yang diformulasikan khusus untuk 
-              meregenerasi kulit, memperkuat sendi, dan meningkatkan vitalitas tubuh Anda. 
-              Tersertifikasi BPOM & Halal MUI.
+              Minuman kolagen (Hydrolyzed Halal Fish Collagen) yang telah tersertifikasi BPOM dan Halal MUI, 
+              aman dikonsumsi harian untuk kesehatan kulit, persendian, rambut dan kecantikan dari dalam. 
+              Terutama efektif untuk recovery paska operasi.
             </p>
           </div>
 
@@ -90,7 +90,7 @@ const Hero = () => {
           <div className="relative rounded-3xl overflow-hidden shadow-glow">
             <img 
               src={heroImage} 
-              alt="Hydrolyzed Halal Fish Collagen Premium" 
+              alt="Collagel - Minuman Jeli Sehat dan Halal" 
               className="w-full h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>

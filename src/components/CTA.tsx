@@ -3,7 +3,7 @@ import { Clock, Gift, Shield } from "lucide-react";
 
 const CTA = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/6285880473634?text=Halo,%20saya%20tertarik%20dengan%20promo%20terbatas%20Hydrolyzed%20Halal%20Fish%20Collagen.%20Bisa%20tolong%20berikan%20informasi%20lengkapnya?", "_blank");
+    window.open("https://wa.me/6285880473634?text=Halo,%20saya%20tertarik%20dengan%20promo%20terbatas%20Collagel.%20Bisa%20tolong%20berikan%20informasi%20lengkapnya?", "_blank");
   };
 
   return (
@@ -27,7 +27,7 @@ const CTA = () => {
             </h2>
             <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
               Dapatkan kulit sehat, sendi kuat, dan rambut indah dengan 
-              Hydrolyzed Halal Fish Collagen premium. Promo terbatas!
+              Collagel - minuman jeli kolagen halal terbaik. Promo terbatas!
             </p>
           </div>
 
@@ -60,9 +60,9 @@ const CTA = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 max-w-2xl mx-auto">
             <div className="space-y-4">
               <div className="text-lg text-primary-foreground/80">Harga Normal</div>
-              <div className="text-2xl line-through text-primary-foreground/60">Rp 399.000</div>
-              <div className="text-5xl font-bold text-accent">Rp 299.000</div>
-              <div className="text-lg text-accent font-semibold">Hemat Rp 100.000!</div>
+              <div className="text-2xl line-through text-primary-foreground/60">Rp 250.000</div>
+              <div className="text-5xl font-bold text-accent">Rp 199.000</div>
+              <div className="text-lg text-accent font-semibold">Hemat Rp 51.000!</div>
             </div>
           </div>
 

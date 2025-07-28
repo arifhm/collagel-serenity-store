@@ -21,11 +21,11 @@ const Footer = () => {
                 <div className="h-10 w-10 rounded-full bg-accent flex items-center justify-center">
                   <span className="text-accent-foreground font-bold">C</span>
                 </div>
-                <span className="font-bold text-2xl">CollagenPlus</span>
+                <span className="font-bold text-2xl">Collagel</span>
               </div>
               <p className="text-primary-foreground/80 leading-relaxed max-w-md">
-                Distributor resmi Hydrolyzed Halal Fish Collagen premium yang tersertifikasi 
-                BPOM & Halal MUI. Memberikan solusi terbaik untuk kesehatan dan kecantikan Anda.
+                Distributor resmi Collagel - minuman kolagen halal berkualitas tinggi 
+                yang tersertifikasi BPOM & Halal MUI untuk kesehatan dan kecantikan optimal.
               </p>
             </div>
 
@@ -86,7 +86,7 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-primary-foreground/80 text-sm">Email</p>
-                  <p className="font-medium">info@collagenplus.com</p>
+                  <p className="font-medium">info@collagel.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -114,7 +114,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-primary-foreground/60 text-sm">
-              © 2024 CollagenPlus. Semua hak dilindungi.
+              © 2024 Collagel. Semua hak dilindungi.
             </div>
           </div>
         </div>
