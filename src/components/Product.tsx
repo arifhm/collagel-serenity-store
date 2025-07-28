@@ -9,51 +9,66 @@ const Product = () => {
     window.open(`https://wa.me/6285880473634?text=${encodeURIComponent(message)}`, "_blank");
   };
 
+  const variants = ["Original", "Strawberry", "Jahe", "Mint", "Jeruk"];
+
   const packages = [
     {
-      name: "Paket Hemat",
-      duration: "1 Bulan",
-      originalPrice: "Rp 250.000",
-      price: "Rp 199.000",
-      savings: "Hemat Rp 51.000",
+      name: "Size 100ml",
+      price: "Rp 20.000",
       features: [
-        "1 Box Collagel (30 sachet)",
-        "Panduan Konsumsi Lengkap",
+        "Collagel 100ml",
+        "Tersedia 5 Varian Rasa",
         "Konsultasi WhatsApp Gratis",
-        "Gratis Ongkir Jabodetabek"
+        "Gratis Ongkir Minimal 10 botol"
       ],
       popular: false
     },
     {
-      name: "Paket Populer",
-      duration: "2 Bulan",
-      originalPrice: "Rp 500.000",
-      price: "Rp 350.000",
-      savings: "Hemat Rp 150.000",
+      name: "Size 150ml",
+      price: "Rp 25.000",
       features: [
-        "2 Box Collagel (60 sachet)",
-        "BONUS: Panduan Diet Sehat",
-        "Konsultasi Pribadi dengan Ahli",
-        "Gratis Ongkir Seluruh Indonesia",
-        "Garansi Uang Kembali"
+        "Collagel 150ml",
+        "Tersedia 5 Varian Rasa",
+        "Konsultasi WhatsApp Gratis",
+        "Gratis Ongkir Minimal 8 botol"
       ],
       popular: true
     },
     {
-      name: "Paket Best Value",
-      duration: "3 Bulan",
-      originalPrice: "Rp 750.000",
-      price: "Rp 480.000",
-      savings: "Hemat Rp 270.000",
+      name: "Size 300ml",
+      price: "Rp 45.000",
       features: [
-        "3 Box Collagel (90 sachet)",
-        "BONUS: Vitamin C Supplement",
-        "Program Konsultasi Rutin",
-        "Konsultasi Video Call Bulanan",
-        "Gratis Ongkir + Asuransi",
-        "Garansi Hasil Maksimal"
+        "Collagel 300ml",
+        "Tersedia 5 Varian Rasa",
+        "Konsultasi Pribadi dengan Ahli",
+        "Gratis Ongkir Minimal 5 botol"
       ],
       popular: false
+    }
+  ];
+
+  const partnershipPackages = [
+    {
+      name: "Collagel LC15",
+      size: "500ml",
+      price: "Rp 200.000",
+      features: [
+        "Collagel LC15 500ml",
+        "Khusus Mitra & Reseller",
+        "Margin Keuntungan Tinggi",
+        "Support Marketing Material"
+      ]
+    },
+    {
+      name: "Collagel LC15",
+      size: "1 Liter",
+      price: "Rp 400.000",
+      features: [
+        "Collagel LC15 1 Liter",
+        "Khusus Mitra & Reseller",
+        "Margin Keuntungan Maksimal",
+        "Support Marketing Material"
+      ]
     }
   ];
 
@@ -62,16 +77,28 @@ const Product = () => {
       <div className="container">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-5xl font-bold">
-            <span className="text-foreground">Pilih Paket</span>
+            <span className="text-foreground">Pilih Ukuran</span>
             <br />
             <span className="bg-hero-gradient bg-clip-text text-transparent">
-              Terbaik untuk Anda
+              Collagel Terbaik
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Dapatkan hasil maksimal dengan paket yang disesuaikan kebutuhan dan budget Anda. 
-            Semua paket dilengkapi garansi dan konsultasi gratis.
+            Tersedia dalam 3 ukuran dengan 5 varian rasa pilihan. 
+            Semua produk bergaransi kualitas dan konsultasi gratis.
           </p>
+          
+          {/* Varian Rasa */}
+          <div className="mt-8">
+            <h3 className="text-lg font-semibold mb-4">Varian Rasa Tersedia:</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {variants.map((variant, index) => (
+                <Badge key={index} variant="outline" className="px-4 py-2 text-sm">
+                  {variant}
+                </Badge>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -98,24 +125,18 @@ const Product = () => {
                   {/* Header */}
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-foreground">{pkg.name}</h3>
-                    <p className="text-muted-foreground">{pkg.duration}</p>
-                    <Badge variant="secondary" className="bg-accent/20 text-accent-foreground">
-                      {pkg.savings}
-                    </Badge>
+                    <p className="text-muted-foreground">Berbagai varian rasa</p>
                   </div>
 
-                  {/* Pricing */}
-                  <div className="space-y-2">
-                    <div className="text-sm text-muted-foreground line-through">
-                      {pkg.originalPrice}
-                    </div>
-                    <div className="text-4xl font-bold bg-hero-gradient bg-clip-text text-transparent">
-                      {pkg.price}
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      *Harga dapat berubah sewaktu-waktu
-                    </div>
-                  </div>
+                   {/* Pricing */}
+                   <div className="space-y-2">
+                     <div className="text-4xl font-bold bg-hero-gradient bg-clip-text text-transparent">
+                       {pkg.price}
+                     </div>
+                     <div className="text-sm text-muted-foreground">
+                       *Harga dapat berubah sewaktu-waktu
+                     </div>
+                   </div>
 
                   {/* Features */}
                   <div className="space-y-4">
@@ -130,16 +151,16 @@ const Product = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <Button 
-                    onClick={() => handleWhatsAppClick(pkg.name)}
-                    className={`w-full py-6 text-lg transition-all duration-300 ${
-                      pkg.popular 
-                        ? 'bg-hero-gradient hover:shadow-glow' 
-                        : 'bg-hero-gradient hover:shadow-glow'
-                    }`}
-                  >
-                    Pesan {pkg.name}
-                  </Button>
+                   <Button 
+                     onClick={() => handleWhatsAppClick(pkg.name)}
+                     className={`w-full py-6 text-lg transition-all duration-300 ${
+                       pkg.popular 
+                         ? 'bg-hero-gradient hover:shadow-glow' 
+                         : 'bg-hero-gradient hover:shadow-glow'
+                     }`}
+                   >
+                     Pesan Sekarang
+                   </Button>
 
                   {/* Trust Badges */}
                   <div className="flex items-center justify-center space-x-4 pt-4">
@@ -157,6 +178,97 @@ const Product = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Partnership Section */}
+        <div className="mt-20">
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              <span className="text-foreground">Program</span>
+              <br />
+              <span className="bg-hero-gradient bg-clip-text text-transparent">
+                Kemitraan & Reseller
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Bergabunglah dengan program kemitraan kami dan dapatkan keuntungan berlipat
+            </p>
+          </div>
+
+          {/* Benefits & Requirements */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="p-6">
+              <h3 className="text-xl font-bold mb-4 text-foreground">Benefit Mitra</h3>
+              <div className="space-y-3">
+                {[
+                  "Margin keuntungan hingga 40%",
+                  "Support marketing material lengkap",
+                  "Training produk dan penjualan",
+                  "Sistem dropship tanpa stok",
+                  "Dukungan tim marketing profesional"
+                ].map((benefit, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            <Card className="p-6">
+              <h3 className="text-xl font-bold mb-4 text-foreground">Syarat Kemitraan</h3>
+              <div className="space-y-3">
+                {[
+                  "Berusia minimal 18 tahun",
+                  "Memiliki smartphone dan koneksi internet",
+                  "Komitmen untuk aktif berjualan",
+                  "Modal awal minimum Rp 200.000",
+                  "Siap mengikuti training dan panduan"
+                ].map((requirement, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <Check className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">{requirement}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+
+          {/* Partnership Packages */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {partnershipPackages.map((pkg, index) => (
+              <Card key={index} className="border-primary/20 hover:border-primary/50 transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="text-center space-y-4">
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-bold text-foreground">{pkg.name}</h3>
+                      <p className="text-muted-foreground">{pkg.size}</p>
+                    </div>
+
+                    <div className="text-3xl font-bold bg-hero-gradient bg-clip-text text-transparent">
+                      {pkg.price}
+                    </div>
+
+                    <div className="space-y-3">
+                      {pkg.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-start space-x-3">
+                          <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-foreground">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <Button 
+                      onClick={() => handleWhatsAppClick(`Kemitraan ${pkg.name} ${pkg.size}`)}
+                      className="w-full py-4 bg-hero-gradient hover:shadow-glow"
+                    >
+                      Daftar Mitra
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Bottom CTA */}
