@@ -112,7 +112,7 @@ const Testimonials = () => {
         <div className="mx-auto mt-16 text-center">
           <div className="inline-block p-8 bg-glass backdrop-blur-glass rounded-2xl border border-primary/20 shadow-soft">
             <div className="space-y-4">
-              <div className="flex items-center justify-center space-x-4 gap-10">
+              <div className="flex items-center justify-center space-x-4">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary">4.9/5</div>
                   <div className="text-sm text-muted-foreground">Rating Pelanggan</div>
