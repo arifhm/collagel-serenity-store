@@ -89,7 +89,7 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-primary-foreground/80 text-sm">Alamat</p>
-                  <p className="font-medium">Jakarta, Indonesia</p>
+                  <p className="font-medium">Jl. Medan Merdeka Barat, RT.2/RW.3, Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110</p>
                 </div>
               </div>
             </div>
