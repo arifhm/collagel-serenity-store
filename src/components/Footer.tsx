@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2 space-y-6">
             <div className="space-y-4">
-              <img src={CollagelLogo} alt="Collagel Logo" className="h-10" />
+              <img src={CollagelLogo} alt="Collagel Logo" className="h-10 bg-white px-3" />
               <p className="text-primary-foreground/80 leading-relaxed max-w-md">
                 Distributor resmi Collagel - minuman kolagen halal berkualitas tinggi
                 yang tersertifikasi BPOM & Halal MUI untuk kesehatan dan kecantikan optimal.
