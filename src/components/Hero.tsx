@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-hero-gradient opacity-5"></div>
+      <div className="absolute inset-0 bg-hero-gradient opacity-5 pointer-events-none"></div>
 
       <div className="container grid lg:grid-cols-2 gap-10 items-center py-10">
         {/* Left Content */}
@@ -53,7 +53,8 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={handleWhatsAppClick}
-              className="bg-hero-gradient hover:shadow-glow transition-all duration-300 text-lg px-8 py-6"
+              className="bg-hero-gradient hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 cursor-pointer relative z-10"
+              style={{ pointerEvents: 'auto', position: 'relative', zIndex: 10 }}
             >
               Pesan Sekarang - Gratis Konsultasi
             </Button>
