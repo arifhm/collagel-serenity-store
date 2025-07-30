@@ -114,17 +114,17 @@ const Testimonials = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-center space-x-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">4.9/5</div>
+                  <div className="text-2xl font-bold text-primary">4.9/5</div>
                   <div className="text-sm text-muted-foreground">Rating Pelanggan</div>
                 </div>
                 <div className="w-px h-12 bg-border"></div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">1000+</div>
+                  <div className="text-2xl font-bold text-primary">1000+</div>
                   <div className="text-sm text-muted-foreground">Testimoni Positif</div>
                 </div>
                 <div className="w-px h-12 bg-border"></div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">+50</div>
+                  <div className="text-2xl font-bold text-primary">+50</div>
                   <div className="text-sm text-muted-foreground">Reseller & Mitra</div>
                 </div>
               </div>
