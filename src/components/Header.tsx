@@ -60,15 +60,14 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-3">
-          <Button
+          {/* <Button
             variant="outline"
-            size="sm"
-            className="hidden sm:flex"
+            className="hidden sm:flex bg-[#128c7e] hover:bg-[#1ebe5d] text-white"
             onClick={handleWhatsAppClick}
           >
-            <Phone className="h-4 w-4 mr-2" />
+            <MessageCircle className="h-4 w-4 mr-2" />
             Konsultasi
-          </Button>
+          </Button> */}
           <Button
             onClick={handleWhatsAppClick}
             className="bg-hero-gradient hover:shadow-glow transition-all duration-300"

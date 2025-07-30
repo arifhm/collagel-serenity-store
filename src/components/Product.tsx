@@ -196,7 +196,7 @@ const Product = () => {
               <Button
                 onClick={() => handleWAConsultClick()}
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                className="bg-[#128c7e] hover:bg-[#1ebe5d] text-white"
               >
                 Konsultasi Gratis Sekarang
               </Button>

@@ -93,9 +93,9 @@ const FAQ = () => {
               </p>
               <Button
                 onClick={handleWhatsAppClick}
-                className="bg-hero-gradient hover:shadow-glow transition-all duration-300"
+                className="bg-[#128c7e] hover:bg-[#1ebe5d] text-white hover:shadow-glow transition-all duration-300"
               >
-                Tanya Langsung di WhatsApp
+                Tanya Langsung via WhatsApp
               </Button>
             </div>
           </div>

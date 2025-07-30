@@ -31,7 +31,7 @@ const Footer = () => {
                 <Button
                   onClick={handleWhatsAppClick}
                   variant="secondary"
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                  className="bg-[#128c7e] hover:bg-[#1ebe5d] text-white"
                 >
                   <MessageCircle className="h-4 w-4 mr-2" />
                   WhatsApp
