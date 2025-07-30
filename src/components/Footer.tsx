@@ -89,7 +89,7 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-primary-foreground/80 text-sm">Alamat</p>
-                  <p className="font-medium">Jl. Medan Merdeka Barat, RT.2/RW.3, Gambir, Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110</p>
+                  <p className="font-medium">Jl. Medan Merdeka Barat, Kec. Gambir<br />Jakarta Pusat - DKI Jakarta 10110</p>
                 </div>
               </div>
             </div>
@@ -100,14 +100,41 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <Shield className="h-6 w-6 text-accent" />
                 <span className="font-medium">BPOM Certified</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Award className="h-6 w-6 text-accent" />
                 <span className="font-medium">Halal MUI</span>
-              </div>
+              </div> */}
+              <a
+                href="https://www.instagram.com/collagel.jkt/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:text-primary transition-colors"
+                aria-label="Instagram Collagel Jakarta"
+              >
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" className="h-6 w-6 text-accent">
+                  <rect width="20" height="20" x="2" y="2" rx="5" stroke="currentColor" strokeWidth="2" />
+                  <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="2" />
+                  <circle cx="17" cy="7" r="1.5" fill="currentColor" />
+                </svg>
+                <span className="font-medium hidden md:inline">Instagram</span>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61578032157730"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:text-primary transition-colors"
+                aria-label="Facebook Collagel Jakarta"
+              >
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" className="h-6 w-6 text-accent">
+                  <rect width="20" height="20" x="2" y="2" rx="5" stroke="currentColor" strokeWidth="2" />
+                  <path d="M15 8h-2a1 1 0 0 0-1 1v2h3l-.5 2H12v6h-2v-6H8v-2h2V9a3 3 0 0 1 3-3h2v2z" fill="currentColor" />
+                </svg>
+                <span className="font-medium hidden md:inline">Facebook</span>
+              </a>
             </div>
             <div className="text-primary-foreground/60 text-sm">
               © 2025 Collagel Distributor Jakarta. Semua hak dilindungi.
