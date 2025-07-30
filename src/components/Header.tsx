@@ -73,7 +73,7 @@ const Header = () => {
             className="bg-hero-gradient hover:shadow-glow transition-all duration-300"
           >
             <MessageCircle className="h-4 w-4 mr-2" />
-            Pesan Sekarang
+            Pesan
           </Button>
 
           <Sheet>
