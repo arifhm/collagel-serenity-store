@@ -109,7 +109,7 @@ const Testimonials = () => {
         </div>
 
         {/* Trust Section */}
-        <div className="max-w-4xl mx-auto mt-16 text-center">
+        <div className="mx-auto mt-16 text-center">
           <div className="inline-block p-8 bg-glass backdrop-blur-glass rounded-2xl border border-primary/20 shadow-soft">
             <div className="space-y-4">
               <div className="flex items-center justify-center space-x-4 gap-10">
